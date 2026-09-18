@@ -11,7 +11,6 @@ public class Pagina<T> {
 	public Pagina(){}
 
 	public Pagina(String script, String input, String id) {
-		super();
 		this.script = script;
 		this.input = input;
 		this.id = id;
