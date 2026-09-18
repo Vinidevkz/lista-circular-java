@@ -58,17 +58,17 @@ public class DoublyCircleList<T> {
 	}
 	
 	public T ler() {
-		
+
 	    if (head == null) {
 	        return null;
 	    }
 
-	    Pagina pagina = (Pagina) head.getValue();
+	    T valor = head.getValue();
 
 	    if (size == 1) {
 	        head = null;
 	        tail = null;
-	    } else {	
+	    } else {
 	        head = head.getNext();
 
 	        head.setPrev(tail);
@@ -77,9 +77,9 @@ public class DoublyCircleList<T> {
 
 	    size--;
 
-	    return (T) pagina;
-		
+	    return valor;
 	}
+
 	
 	
 	
