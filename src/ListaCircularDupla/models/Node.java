@@ -1,4 +1,4 @@
-package ListaCircularDupla.entities;
+package ListaCircularDupla.models;
 
 public class Node<T> {
 	

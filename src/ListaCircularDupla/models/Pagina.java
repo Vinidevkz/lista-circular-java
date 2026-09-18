@@ -1,8 +1,8 @@
-package ListaCircularDupla.entities;
+package ListaCircularDupla.models;
 
 import java.util.Objects;
 
-public class Pagina<T> {
+public class Pagina {
 	
 	private String script = "/umscript.py";
 	private String input = "{}";

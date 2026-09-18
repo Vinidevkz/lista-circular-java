@@ -1,4 +1,4 @@
-package ListaCircularDupla.entities;
+package ListaCircularDupla.models;
 
 public class DoublyCircleList<T> {
 	
@@ -57,7 +57,7 @@ public class DoublyCircleList<T> {
 		size++;
 	}
 	
-	public Pagina ler() {
+	public T ler() {
 		
 	    if (head == null) {
 	        return null;
@@ -68,7 +68,7 @@ public class DoublyCircleList<T> {
 	    if (size == 1) {
 	        head = null;
 	        tail = null;
-	    } else {
+	    } else {	
 	        head = head.getNext();
 
 	        head.setPrev(tail);
@@ -77,7 +77,7 @@ public class DoublyCircleList<T> {
 
 	    size--;
 
-	    return pagina;
+	    return (T) pagina;
 		
 	}
 	
