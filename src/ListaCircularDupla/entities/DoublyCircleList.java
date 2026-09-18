@@ -6,23 +6,23 @@ public class DoublyCircleList<T> {
 	private Node<T> tail;
 	
 	public DoublyCircleList(){}
+
+	//getters e setters
 	
-	//methods
-	
-	//append
-	public void append(T value) {
-		
-		Node<T> newNode = new Node(value);
-		
-		if(head == null) {
-			this.head = newNode;
-			this.head.setNext(tail);
-			this.head.setPrev(tail);
-		}else if(tail == null) {
-			
-		}
-		
+	public Node<T> getHead() {
+		return head;
 	}
-	
+
+	public void setHead(Node<T> head) {
+		this.head = head;
+	}
+
+	public Node<T> getTail() {
+		return tail;
+	}
+
+	public void setTail(Node<T> tail) {
+		this.tail = tail;
+	}
 
 }
